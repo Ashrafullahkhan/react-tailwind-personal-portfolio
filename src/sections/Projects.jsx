@@ -2,38 +2,38 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "Epic Estates — Web & Mobile",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
+      "Full responsive Angular web app plus React Native (Expo) mobile apps on Google Play and the App Store. Worked with a team of 5+ developers for a seamless cross-platform experience.",
     image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
+    tags: ["Angular", "React Native", "Expo", "REST APIs"],
+    link: "https://epicestates.us/",
     github: "#",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Cosmos Clinical — Clinical Dashboard",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+      "Large-scale clinical frontend with 17+ developers: Angular components from complex Figma designs, with strong focus on UI performance, accessibility, and pixel-perfect execution.",
     image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
+    tags: ["Angular", "Figma", "Accessibility", "Agile"],
+    link: "https://dev.cosmosclinical.com/#/login",
     github: "#",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Freelance — International Clients",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
+      "20+ projects via Fiverr and direct clients in fintech, e-commerce, education, and real estate—end-to-end builds, APIs, and UI delivery with consistent quality and deadlines.",
     image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
+    tags: ["React", "Laravel", "PHP", "REST APIs"],
+    link: "https://www.fiverr.com",
     github: "#",
   },
   {
-    title: "Project Management Tool",
+    title: "Swipen — Payment Solution",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
+      "UK-based fintech: scalable backend services and APIs with Stripe and Twilio integrations, built with security and performance best practices alongside a small team.",
     image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
+    tags: ["Laravel", "Stripe", "Twilio", "APIs"],
     link: "#",
     github: "#",
   },
@@ -59,8 +59,8 @@ export const Projects = () => {
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            A selection of my recent work, from complex web applications to
-            innovative tools that solve real-world problems.
+            Selected builds spanning enterprise Angular frontends, cross-platform
+            mobile, fintech backends, and international freelance deliveries.
           </p>
         </div>
 
@@ -88,13 +88,21 @@ export const Projects = () => {
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
                     href={project.link}
+                    {...(project.link.startsWith("http")
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    aria-label={`Visit ${project.title}`}
                   >
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
                   <a
                     href={project.github}
+                    {...(project.github.startsWith("http")
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    aria-label={`Source for ${project.title}`}
                   >
                     <Github className="w-5 h-5" />
                   </a>

@@ -1,28 +1,29 @@
-import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
+import { Code2, Globe, Rocket, Users } from "lucide-react";
 
 const highlights = [
   {
-    icon: Code2,
-    title: "Clean Code",
+    icon: Globe,
+    title: "Global Clients",
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
+      "Worked with teams and clients from the US, UK, and Canada on remote, agile engagements.",
   },
   {
     icon: Rocket,
-    title: "Performance",
+    title: "Full Lifecycle Delivery",
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
+      "End-to-end web and mobile delivery—from APIs and backends to polished UI and store releases.",
   },
   {
     icon: Users,
-    title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
+    title: "Communication",
+    description:
+      "Strong client handling, clear updates, and collaboration across time zones.",
   },
   {
-    icon: Lightbulb,
-    title: "Innovation",
+    icon: Code2,
+    title: "Quality & Reliability",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "On-time, high-performing systems with a track record of client satisfaction.",
   },
 ];
 
@@ -49,30 +50,30 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I'm a results-driven software developer and freelance engineer
+                with 5+ years of experience designing, developing, and deploying
+                scalable web and mobile applications. I've shipped work with
+                international clients across the US and UK in pharmaceutical,
+                fintech, and real estate domains.
               </p>
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                I'm highly proficient in full-stack development—Laravel and PHP
+                on the backend; Angular, React, and React Native on the
+                front—and I thrive in Agile environments delivering accessible,
+                performant interfaces from complex Figma designs.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                I hold a Bachelor of Technology in Computer Science from Benawa
+                Institute of Higher Education (2018–2022), Kandahar,
+                Afghanistan.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "I focus on timely delivery, clear communication, and solutions
+                that scale—whether that's a clinical dashboard, a payment
+                stack, or a cross-platform mobile app."
               </p>
             </div>
           </div>

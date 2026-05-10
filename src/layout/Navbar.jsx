@@ -1,4 +1,3 @@
-import { Button } from "@/components/Button";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -34,7 +33,7 @@ export const Navbar = () => {
           href="#"
           className="text-xl font-bold tracking-tight hover:text-primary"
         >
-          PM<span className="text-primary">.</span>
+          AUA<span className="text-primary">.</span>
         </a>
 
         {/* Desktop Nav */}
@@ -54,7 +53,12 @@ export const Navbar = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <a
+            href="#contact"
+            className="relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25 px-4 py-2 text-sm inline-flex items-center justify-center gap-2"
+          >
+            Contact Me
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -81,9 +85,13 @@ export const Navbar = () => {
               </a>
             ))}
 
-            <Button onClick={() => setIsMobileMenuOpen(false)}>
+            <a
+              href="#contact"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25 px-6 py-3 text-base inline-flex items-center justify-center gap-2 text-center"
+            >
               Contact Me
-            </Button>
+            </a>
           </div>
         </div>
       )}

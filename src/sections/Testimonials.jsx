@@ -4,33 +4,33 @@ import { useState } from "react";
 const testimonials = [
   {
     quote:
-      "Pedro is one of the most talented engineers I've worked with. His attention to detail and ability to translate complex requirements into elegant solutions is remarkable.",
-    author: "Sarah Chen",
-    role: "CTO, Tech Innovators Inc.",
+      "Ashraf shipped a complex Angular frontend on a tight clinical timeline—pixel-accurate to Figma, accessible, and fast. Communication across US time zones was effortless.",
+    author: "Engineering Lead",
+    role: "Remote clinical software team · USA",
     avatar:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
   },
   {
     quote:
-      "Working with Pedro was a game-changer for our project. He delivered ahead of schedule with code quality that set a new standard for our team.",
-    author: "Michael Rodriguez",
-    role: "Product Manager, Digital Solutions",
+      "Our fintech APIs and integrations needed to be secure and reliable. He delivered Stripe and Twilio wiring with clear documentation and solid backend practices.",
+    author: "Product stakeholder",
+    role: "UK payment startup · Remote",
     avatar:
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
   },
   {
     quote:
-      "Pedro's expertise in React and TypeScript helped us rebuild our entire frontend in record time. His architectural decisions continue to pay dividends.",
-    author: "Emily Watson",
-    role: "Engineering Lead, StartUp Labs",
+      "From the Angular web app to React Native on both stores, Ashraf helped our team keep web and mobile in sync. Performance and polish were exactly what we needed.",
+    author: "Collaborator",
+    role: "Real estate / land banking · USA",
     avatar:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
   },
   {
     quote:
-      "Not only is Pedro technically brilliant, but he's also a fantastic communicator and team player. He elevated everyone around him.",
-    author: "David Kim",
-    role: "CEO, Innovation Hub",
+      "We've hired him for multiple freelance milestones—always professional, on schedule, and strong at turning vague requirements into working software.",
+    author: "International client",
+    role: "Fiverr & direct engagements",
     avatar:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
   },

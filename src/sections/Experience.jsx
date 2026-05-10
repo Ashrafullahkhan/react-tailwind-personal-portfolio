@@ -1,38 +1,38 @@
 const experiences = [
   {
-    period: "2022 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Tech Innovators Inc.",
+    period: "Jan 2020 — Present",
+    role: "Freelance Software Developer",
+    company: "Fiverr & Other Clients",
     description:
-      "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+      "Delivered 20+ international client projects end-to-end—web, APIs, and UI/UX—in fintech, e-commerce, education, and real estate. Focus on timely delivery and modern tooling.",
+    technologies: ["React", "Laravel", "REST APIs", "TypeScript", "PHP"],
     current: true,
   },
   {
-    period: "2020 — 2022",
-    role: "Frontend Engineer",
-    company: "Digital Solutions Co.",
+    period: "Mar 2023 — Mar 2025",
+    role: "Full Stack Developer (Part-Time)",
+    company: "Epic Estates · Land Banking · USA (Remote)",
     description:
-      "Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
-    technologies: ["React", "Redux", "Jest", "Cypress"],
+      "Built a fully responsive Angular web app and a React Native (Expo) mobile app on App Store and Play Store. Collaborated with 5+ developers (part-time, daily contribution) on web–mobile integration and performance.",
+    technologies: ["Angular", "React Native", "Expo", "REST APIs"],
     current: false,
   },
   {
-    period: "2019 — 2020",
-    role: "Junior Developer",
-    company: "StartUp Labs",
+    period: "Feb 2022 — Feb 2025",
+    role: "Frontend Developer",
+    company: "Cosmos Clinical · Pharmaceutical Manufacturing · USA (Remote)",
     description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
-    technologies: ["React", "Node.js", "MongoDB", "AWS"],
+      "Delivered responsive UI for a large-scale clinical project with 17+ developers. Converted complex Figma designs into pixel-perfect Angular components; emphasized accessibility and performance.",
+    technologies: ["Angular", "Figma", "Agile", "Accessibility"],
     current: false,
   },
   {
-    period: "2018 — 2019",
-    role: "Freelance Developer",
-    company: "Self-Employed",
+    period: "Jan 2021 — Jan 2022",
+    role: "Full Stack Developer",
+    company: "Swipen Payment Solution · England, UK (Remote)",
     description:
-      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
-    technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
+      "Fintech product with a team of 4+ developers: secure backend services and APIs, Stripe and Twilio integrations, and backend performance and security best practices.",
+    technologies: ["PHP", "Laravel", "Stripe", "Twilio", "REST APIs"],
     current: false,
   },
 ];
@@ -70,8 +70,8 @@ export const Experience = () => {
             className="text-muted-foreground
            animate-fade-in animation-delay-200"
           >
-            A timeline of my professional growth, from curious beginner to
-            senior engineer leading teams and building products at scale.
+            Remote roles across healthcare, fintech, and real estate—plus
+            long-running freelance work with international clients.
           </p>
         </div>
 

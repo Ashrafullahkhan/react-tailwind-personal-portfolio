@@ -1,33 +1,33 @@
-import { Button } from "@/components/Button";
 import {
   ArrowRight,
   ChevronDown,
   Github,
   Linkedin,
-  Twitter,
+  ShoppingBag,
   Download,
 } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
-  "React",
-  "Next.js",
+  "JavaScript",
   "TypeScript",
-  "Node.js",
-  "GraphQL",
-  "PostgreSQL",
+  "PHP",
+  "HTML",
+  "CSS",
+  "Laravel",
+  "React",
+  "React Native",
+  "Angular",
+  "REST APIs",
+  "MySQL",
   "MongoDB",
-  "Redis",
   "Docker",
   "AWS",
-  "Vercel",
-  "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
+  "Google Cloud",
+  "Firebase",
   "Git",
-  "GitHub Actions",
+  "CI/CD",
+  "Figma",
 ];
 
 export const Hero = () => {
@@ -69,7 +69,7 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer • React Specialist
+                Software Developer • Freelancer • 5+ Years Experience
               </span>
             </div>
 
@@ -85,17 +85,21 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Pedro Machado — a software engineer specializing in
-                React, Next.js, and TypeScript. I build scalable, performant web
-                applications that users love.
+                Hi, I'm Ashraf Ullah Aryan — a results-driven software developer
+                and freelance engineer. I design, build, and ship scalable web and
+                mobile apps for international clients across the US and UK, with
+                a strong focus on quality and agile delivery.
               </p>
             </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
+              <a
+                href="#contact"
+                className="relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25 px-8 py-4 text-lg inline-flex items-center justify-center gap-2"
+              >
                 Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
+              </a>
               <AnimatedBorderButton>
                 <Download className="w-5 h-5" />
                 Download CV
@@ -106,13 +110,24 @@ export const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
-                { icon: Twitter, href: "#" },
+                { icon: Github, href: "https://github.com", label: "GitHub" },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com",
+                  label: "LinkedIn",
+                },
+                {
+                  icon: ShoppingBag,
+                  href: "https://www.fiverr.com",
+                  label: "Fiverr",
+                },
               ].map((social, idx) => (
                 <a
                   key={idx}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
                   {<social.icon className="w-5 h-5" />}
@@ -133,7 +148,7 @@ export const Hero = () => {
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
                   src="/profile-photo.jpg"
-                  alt="Pedro Machado"
+                  alt="Ashraf Ullah Aryan"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                 />
 
